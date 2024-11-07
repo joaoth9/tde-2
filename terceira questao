@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstring>   // Para a função strlen (caso queira usar para determinar o tamanho da string)
+
+using namespace std;
+
+int main() {
+    char str[100];  // Vetor de caracteres para armazenar a string
+
+    // Lê a string do usuário
+    printf("Digite uma string: ");
+    scanf("%99[^\n]", str);  // Lê até 99 caracteres ou até encontrar uma nova linha
+
+    // Exibe cada caractere da string em uma linha separada
+    printf("Cada caractere da string:\n");
+    for (int i = 0; str[i] != '\0'; i++) {  // Itera sobre a string até o caractere nulo
+        printf("%c\n", str[i]);  // Exibe o caractere atual
+    }
+
+    return 0;
+}
