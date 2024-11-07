@@ -1,19 +1,17 @@
-#include <iostream>  // Para entrada e saída
-#include <cstring>   // Para a função strlen
+#include <iostream> 
+#include <cstring>  
 
 using namespace std;
 
 int main() {
-    char str[100];  // Declara um vetor de caracteres para armazenar a string
+    char str[100];  
 
-    // Lê uma string do usuário
+
     printf("Digite uma string: ");
-    scanf("%99[^\n]", str);  // Lê a string até 99 caracteres ou até encontrar uma nova linha
-
-    // Exibe a string
+    scanf("%99[^\n]", str);  
+  
     printf("Você digitou: %s\n", str);
 
-    // Exibe o comprimento da string
     printf("O comprimento da string é: %lu\n", strlen(str));
 
     return 0;
