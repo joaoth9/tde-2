@@ -1,0 +1,26 @@
+#include <iostream>  // Para entrada e saída
+#include <cstring>   // Para a função strcmp
+
+using namespace std;
+
+int main() {
+    char str1[100], str2[100];  // Vetores de caracteres para armazenar as duas strings
+
+    // Lê duas strings do usuário
+    printf("Digite a primeira string: ");
+    scanf("%99[^\n]", str1);  // Lê a primeira string
+
+    getchar();  // Para capturar a nova linha deixada após o primeiro scanf
+
+    printf("Digite a segunda string: ");
+    scanf("%99[^\n]", str2);  // Lê a segunda string
+
+    // Compara as duas strings usando strcmp
+    if (strcmp(str1, str2) == 0) {
+        printf("As strings são iguais.\n");
+    } else {
+        printf("As strings são diferentes.\n");
+    }
+
+    return 0;
+}
